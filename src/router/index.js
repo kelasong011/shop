@@ -9,7 +9,7 @@ import Profile from '../pages/Profile/Profile.vue'
 Vue.use(VueRouter)
 
 export default new VueRouter({
-    routers:[
+    routes:[
         {
             path:'/msite',
             component:Msite
@@ -26,5 +26,9 @@ export default new VueRouter({
             path:'/profile',
             component:Profile
         },
+        {
+            path:'/',
+            redirect:'/msite'
+        }
     ]
 })
